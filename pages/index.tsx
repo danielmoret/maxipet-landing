@@ -1,11 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo.png';
+import Navbar from '../components/Navbar';
 
 function HomePage() {
   return (
-    <div className="min-h-screen w-screen bg-white flex dark:bg-black">
-      <section className="max-w-screen-md m-auto h-full">
+    <div className="min-h-screen w-screen bg-white flex flex-col dark:bg-black">
+      <Navbar />
+      {/* <section className="max-w-screen-md m-auto h-full">
         <article className="">
           <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
             <Image
@@ -27,7 +29,7 @@ function HomePage() {
             </a>
           </p>
         </article>
-      </section>
+      </section> */}
     </div>
   );
 }
