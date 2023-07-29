@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import location from '../public/images/navbar/location-icon.svg';
+import location from '../public/images/navbar/Location-icon.svg';
 import instagram from '../public/images/navbar/instagram.svg';
 import facebook from '../public/images/navbar/facebook.svg';
 import twitter from '../public/images/navbar/twitter.svg';
 import angleDown from '../public/images/navbar/angle-down.svg';
 import logoMaxipet from '../public/images/navbar/logo-maxipet.png';
 import locationInput from '../public/images/navbar/location.svg';
-import petIcon from '../public/images/navbar/pet-icon.svg';
-import userIcon from '../public/images/navbar/user.svg';
-import shoppingCart from '../public/images/navbar/shopping-cart.svg';
-import search from '../public/images/navbar/search.svg';
+import petIcon from '../public/images/navbar/Pet-icon.svg';
+import userIcon from '../public/images/navbar/User.svg';
+import shoppingCart from '../public/images/navbar/Shopping-cart.svg';
+import search from '../public/images/navbar/Search.svg';
 
 const Navbar = () => (
   <>
