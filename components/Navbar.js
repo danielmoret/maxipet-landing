@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import location from '../public/images/navbar/location-icon.svg';
 import instagram from '../public/images/navbar/instagram.svg';
 import facebook from '../public/images/navbar/facebook.svg';
@@ -42,6 +43,44 @@ const Navbar = () => (
         <Image src={userIcon} />
         <Image src={shoppingCart} />
       </div>
+    </div>
+    <div>
+      <nav className="p-2">
+        <div className="w-full mx-auto">
+          <ul className="flex items-center justify-evenly text-sm text-[#68605B]">
+            <li className="text-center px-2">
+              <Link href="" className=" hover:text-gray-300">
+                Inicio
+              </Link>
+            </li>
+            <li className="text-center px-2">
+              <Link href="#" className=" hover:text-gray-300 ">
+                Comprar por Marca
+              </Link>
+            </li>
+            <li className="text-center px-2">
+              <Link href="#" className=" hover:text-gray-300 ">
+                Comprar por Mascota
+              </Link>
+            </li>
+            <li className="text-center px-2">
+              <Link href="#" className=" hover:text-gray-300">
+                Nuestros servicios
+              </Link>
+            </li>
+            <li className="text-center px-2">
+              <Link href="#" className=" hover:text-gray-300 ">
+                Promociones
+              </Link>
+            </li>
+            <li className="text-center px-2">
+              <Link href="#" className=" hover:text-gray-300 ">
+                Nosotros
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </>
 );
