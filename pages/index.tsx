@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
+import Categories from '../components/Categories';
 
 function HomePage() {
   return (
     <div className="min-h-screen  bg-white flex flex-col dark:bg-black">
       <Navbar />
       <Banner />
+      <Categories />
       {/* <section className="max-w-screen-md m-auto h-full">
         <article className="">
           <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
