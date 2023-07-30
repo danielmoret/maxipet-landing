@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Categories from '../components/Categories';
+import Products from '../components/Products';
 
 function HomePage() {
   return (
@@ -9,29 +10,8 @@ function HomePage() {
       <Navbar />
       <Banner />
       <Categories />
-      {/* <section className="max-w-screen-md m-auto h-full">
-        <article className="">
-          <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
-            <Image
-              className="w-96 h-auto text-center mx-auto"
-              alt="Avila Tek Logo"
-              src={logo}
-            />
-          </a>
-          <h1 className="text-2xl text-center text-gray-700 dark:text-gray-100">
-            Next.js Started template
-          </h1>
-          <p className="text-center text-white text-lg mt-2">
-            <a
-              href="https://github.com/Avila-Tek/next-template"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-          </p>
-        </article>
-      </section> */}
+      <Products title="productos destacados" reverse={false} />
+      <Products title="ultimos productos" reverse />
     </div>
   );
 }
