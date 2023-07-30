@@ -21,7 +21,7 @@ const Products = ({ title, reverse, img, alt }: ProductsProps) => (
       <div
         className={`${
           !reverse ? 'ms-10' : 'me-10'
-        } gap-10  w-full flex overflow-x-scroll xl:overflow-x-hidden justify-between ${
+        } gap-10  w-full flex overflow-x-auto justify-between  ${
           img &&
           'lg:grid lg:grid-cols-2 xl:lg:grid-cols-3  place-content-between  lg:overflow-x-hidden'
         }`}
