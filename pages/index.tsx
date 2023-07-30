@@ -1,12 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
-import logo from '../public/logo.png';
 import Navbar from '../components/Navbar';
+import Banner from '../components/Banner';
 
 function HomePage() {
   return (
-    <div className="min-h-screen w-screen bg-white flex flex-col dark:bg-black">
+    <div className="min-h-screen  bg-white flex flex-col dark:bg-black">
       <Navbar />
+      <Banner />
       {/* <section className="max-w-screen-md m-auto h-full">
         <article className="">
           <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
