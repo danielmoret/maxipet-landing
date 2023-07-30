@@ -1,14 +1,14 @@
-import Image from 'next/image';
 import ProductCard from './ProductCard';
-import cat from '../public/images/products/cat.png';
 import puppyChiot from '../public/images/products/puppy-chiot.png';
 
 interface ProductsProps {
   title: string;
   reverse: boolean;
+  img?: string;
+  alt?: string;
 }
 
-const Products = ({ title, reverse }: ProductsProps) => (
+const Products = ({ title, reverse, img, alt }: ProductsProps) => (
   <section className="px-5 lg:px-36 mt-20">
     <p className="text-sm text-[#867D77]">Lorem ipsum dolor sit amet. </p>
     <p className="text-xl text-[#E2081E] font-monserrat font-bold uppercase ">
@@ -17,8 +17,15 @@ const Products = ({ title, reverse }: ProductsProps) => (
     <div
       className={`flex justify-between mt-5 ${reverse && 'flex-row-reverse'}`}
     >
-      <Image src={cat} alt="cat" className="hidden lg:inline-block" />
-      <div className="ms-10 flex lg:grid lg:grid-cols-2 xl:lg:grid-cols-3  gap-10 w-full overflow-x-scroll lg:overflow-x-hidden">
+      <img src={img} alt={alt} className="hidden lg:inline-block" />
+      <div
+        className={`${
+          !reverse ? 'ms-10' : 'me-10'
+        } gap-10  w-full flex overflow-x-scroll xl:overflow-x-hidden justify-between ${
+          img &&
+          'lg:grid lg:grid-cols-2 xl:lg:grid-cols-3  place-content-between  lg:overflow-x-hidden'
+        }`}
+      >
         <ProductCard
           name="1st Choice Puppy Chiot"
           image={puppyChiot}

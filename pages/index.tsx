@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Categories from '../components/Categories';
 import Products from '../components/Products';
+import cat from '../public/images/products/cat.png';
 
 function HomePage() {
   return (
@@ -10,8 +11,14 @@ function HomePage() {
       <Navbar />
       <Banner />
       <Categories />
-      <Products title="productos destacados" reverse={false} />
-      <Products title="ultimos productos" reverse />
+      <Products
+        title="productos destacados"
+        reverse={false}
+        img={cat.src}
+        alt="gato"
+      />
+      <Products title="productos populares" reverse={false} />
+      <Products title="últimos productos" reverse img={cat.src} alt="gato" />
     </div>
   );
 }
