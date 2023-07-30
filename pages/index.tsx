@@ -8,6 +8,7 @@ import Services from '../components/Services';
 import cat from '../public/images/products/cat.png';
 import ad1 from '../public/images/ads/ad1.png';
 import ad2 from '../public/images/ads/ad2.png';
+import Brands from '../components/Brands';
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
       <Ads img={ad2} alt="perro jugando" />
       <Products title="últimos productos" reverse img={cat.src} alt="gato" />
       <Services />
+      <Brands />
     </div>
   );
 }
