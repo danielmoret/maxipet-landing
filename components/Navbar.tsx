@@ -46,7 +46,7 @@ const Navbar = () => (
     </div>
     <div>
       <nav className="p-2">
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto overflow-x-auto">
           <ul className="flex items-center justify-evenly text-sm text-[#68605B]">
             <li className="text-center px-2">
               <Link href="" className=" hover:text-gray-300">
