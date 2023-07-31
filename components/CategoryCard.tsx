@@ -1,3 +1,5 @@
+import productStyles from './styles/productcard.module.css';
+
 interface CategoryCardProps {
   name: string;
   image: {
@@ -7,7 +9,7 @@ interface CategoryCardProps {
 
 const CategoryCard = ({ name, image }: CategoryCardProps) => (
   <div className="flex flex-col items-center  justify-center">
-    <img src={image.src} alt={name} />
+    <img src={image.src} alt={name} className={productStyles.width__image} />
     <span>{name}</span>
   </div>
 );
