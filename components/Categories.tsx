@@ -7,7 +7,7 @@ const Categories = () => (
     <p className="text-xl text-[#E2081E] font-monserrat font-bold">
       UNA GRAN VARIEDAD DE CATEGORÍAS
     </p>
-    <section className="flex justify-center gap-10 mt-4 overflow-x-auto">
+    <section className="flex  justify-start xl:justify-center gap-10 mt-4 overflow-x-auto">
       <CategoryCard name="Perros" image={dogIcon} />
       <CategoryCard name="Gatos" image={dogIcon} />
       <CategoryCard name="Peces" image={dogIcon} />

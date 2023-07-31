@@ -13,7 +13,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ name, image, price, rating }: ProductCardProps) => (
-  <div className="flex flex-col items-center justify-center">
+  <div className="flex flex-col items-center justify-center pb-3">
     <img src={image.src} alt={name} className={productStyles.width__image} />
     <div className="flex flex-col">
       <span className="font-monserrat text-sm font-medium">{name}</span>

@@ -8,7 +8,7 @@ interface CategoryCardProps {
 }
 
 const CategoryCard = ({ name, image }: CategoryCardProps) => (
-  <div className="flex flex-col items-center  justify-center">
+  <div className="flex flex-col items-center  justify-center  pb-3">
     <img src={image.src} alt={name} className={productStyles.width__image} />
     <span>{name}</span>
   </div>

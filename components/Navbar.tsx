@@ -47,34 +47,52 @@ const Navbar = () => (
     <div>
       <nav className="p-2">
         <div className="w-full mx-auto overflow-x-auto">
-          <ul className="flex items-center justify-evenly text-sm text-[#68605B]">
+          <ul className="flex items-center justify-start sm:justify-evenly text-sm text-[#68605B]">
             <li className="text-center px-2">
-              <Link href="" className=" hover:text-gray-300">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Inicio
               </Link>
             </li>
             <li className="text-center px-2">
-              <Link href="#" className=" hover:text-gray-300 ">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Comprar por Marca
               </Link>
             </li>
             <li className="text-center px-2">
-              <Link href="#" className=" hover:text-gray-300 ">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Comprar por Mascota
               </Link>
             </li>
             <li className="text-center px-2">
-              <Link href="#" className=" hover:text-gray-300">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Nuestros servicios
               </Link>
             </li>
             <li className="text-center px-2">
-              <Link href="#" className=" hover:text-gray-300 ">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Promociones
               </Link>
             </li>
             <li className="text-center px-2">
-              <Link href="#" className=" hover:text-gray-300 ">
+              <Link
+                href="#"
+                className=" hover:text-gray-300 font-monserrat font-medium text-sm"
+              >
                 Nosotros
               </Link>
             </li>
