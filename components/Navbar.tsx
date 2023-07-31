@@ -61,7 +61,7 @@ const Navbar = () => (
                 href="#"
                 className=" hover:text-gray-300 font-monserrat font-medium text-sm"
               >
-                Comprar por Marca
+                Comprar por marca
               </Link>
             </li>
             <li className="text-center px-2">
@@ -69,7 +69,7 @@ const Navbar = () => (
                 href="#"
                 className=" hover:text-gray-300 font-monserrat font-medium text-sm"
               >
-                Comprar por Mascota
+                Comprar por mascota
               </Link>
             </li>
             <li className="text-center px-2">
