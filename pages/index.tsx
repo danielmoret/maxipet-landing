@@ -9,6 +9,7 @@ import cat from '../public/images/products/cat.png';
 import ad1 from '../public/images/ads/ad1.png';
 import ad2 from '../public/images/ads/ad2.png';
 import Brands from '../components/Brands';
+import Footer from '../components/Footer';
 
 function HomePage() {
   return (
@@ -28,6 +29,7 @@ function HomePage() {
       <Products title="últimos productos" reverse img={cat.src} alt="gato" />
       <Services />
       <Brands />
+      <Footer />
     </div>
   );
 }
