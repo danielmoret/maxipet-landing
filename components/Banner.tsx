@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import bannerPerro from '../public/images/banner/bannerperro.jpg';
 
+interface Slide {
+  url: {
+    src: string;
+  };
+}
+
+interface BannerState {
+  currentIndex: number;
+}
+
 const Banner = () => {
-  const slides = [
+  const slides: Slide[] = [
     {
       url: bannerPerro,
     },
@@ -18,9 +28,10 @@ const Banner = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] =
+    useState<BannerState['currentIndex']>(0);
 
-  const goToSlide = (slideIndex) => {
+  const goToSlide = (slideIndex: number): void => {
     setCurrentIndex(slideIndex);
   };
   return (

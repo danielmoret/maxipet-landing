@@ -2,8 +2,12 @@ import Image from 'next/image';
 import dogPawFilled from '../public/images/products/dog-paw-filled.svg';
 import dogPawEmpty from '../public/images/products/dog-paw-empty.svg';
 
-const Rating = ({ rating }) => {
-  const createRating = (paws) => {
+interface RatingProps {
+  rating: number;
+}
+
+const Rating = ({ rating }: RatingProps) => {
+  const createRating = (paws: number): number[] => {
     const ratingArr = [1, 1, 1, 1, 1].fill(0, paws);
 
     return ratingArr;

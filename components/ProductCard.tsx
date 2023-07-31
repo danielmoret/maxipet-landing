@@ -3,9 +3,18 @@ import shoppingCart from '../public/images/products/shopping-cart.svg';
 import Rating from './Rating';
 import productStyles from './styles/productcard.module.css';
 
-const ProductCard = ({ name, image, price, rating }) => (
+interface ProductCardProps {
+  name: string;
+  image: {
+    src: string;
+  };
+  price: string;
+  rating: number;
+}
+
+const ProductCard = ({ name, image, price, rating }: ProductCardProps) => (
   <div className="flex flex-col items-center justify-center">
-    <Image src={image} alt={name} className={productStyles.width__image} />
+    <img src={image.src} alt={name} className={productStyles.width__image} />
     <div className="flex flex-col">
       <span className="font-monserrat text-sm font-medium">{name}</span>
       <Rating rating={rating} />

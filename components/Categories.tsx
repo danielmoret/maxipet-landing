@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import dogIcon from '../public/images/categories/dog-icon.png';
 import CategoryCard from './CategoryCard';
 
