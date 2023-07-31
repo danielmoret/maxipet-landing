@@ -16,32 +16,32 @@ const Navbar = () => (
   <>
     <div className="bg-[#E2081E] flex justify-end gap-5 pe-12 py-1.5">
       <div className="flex gap-2 items-center">
-        <Image src={location} />
+        <Image src={location} alt="location icon " />
         <span className="text-white text-xs font-monserrat">Bello Monte</span>
-        <Image src={angleDown} />
+        <Image src={angleDown} alt="angle down icon " />
       </div>
       <div className="flex gap-2">
-        <Image src={instagram} />
-        <Image src={twitter} />
-        <Image src={facebook} />
+        <Image src={instagram} alt="instgram icon" />
+        <Image src={twitter} alt="twitter icon" />
+        <Image src={facebook} alt="facebook icon" />
       </div>
     </div>
     <div className="flex justify-between items-center flex-wrap px-16 py-5">
-      <Image src={logoMaxipet} />
+      <Image src={logoMaxipet} alt="Maxipet logo" />
       <div className="rounded-md border flex font-monserrat border-[#C8C2BE] px-2 w-1/3 h-8 ">
         <input
           type="text"
           placeholder="Buscador"
           className="h-full w-full focus:outline-none border-none focus:ring-0 placeholder-[#C8C2BE] text-gray-600"
         />
-        <Image src={search} />
+        <Image src={search} alt="search icon" />
       </div>
 
       <div className="flex gap-2">
-        <Image src={locationInput} />
-        <Image src={petIcon} />
-        <Image src={userIcon} />
-        <Image src={shoppingCart} />
+        <Image src={locationInput} alt="location icon" />
+        <Image src={petIcon} alt="pet icon" />
+        <Image src={userIcon} alt="user icon" />
+        <Image src={shoppingCart} alt="shopping cart icon" />
       </div>
     </div>
     <div>
